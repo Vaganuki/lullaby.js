@@ -43,8 +43,25 @@ class _Note {
             'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B',
         ];
         const note = notes[midi % 12];
-        const octave = Math.floor(midi / 12) - 1;
+        const octave = Math.floor(midi / 12) - 1; //Reversed formula
         return `${note}${octave}`;
+    }
+
+    octave(n) {
+        const newName = this.name.replace(/\d$/, String(n));
+        return Note(newName);
+    }
+
+    transpose(semitones){
+        return Note(this.midi + semitones);
+    }
+
+    sharp(){
+        return this.transpose(1);
+    }
+
+    flat() {
+        return this.transpose(-1);
     }
 }
 
