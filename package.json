@@ -1,0 +1,21 @@
+{
+  "name": "lullaby.js",
+  "version": "1.0.0",
+  "description": "Lullaby is a utility project to simplify making sound/music for front-end devs",
+  "homepage": "https://github.com/Vaganuki/lullaby.js#readme",
+  "bugs": {
+    "url": "https://github.com/Vaganuki/lullaby.js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vaganuki/lullaby.js.git"
+  },
+  "license": "MIT",
+  "author": "vaganuki",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  }
+}
