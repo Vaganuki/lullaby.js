@@ -21,4 +21,4 @@ class _AudioContextManager {
 
 const audioContextManager = new _AudioContextManager();
 
-module.exports = {audioContextManager};
+module.exports = audioContextManager;
