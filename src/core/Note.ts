@@ -8,7 +8,7 @@ export class Note {
             this._name = note;
             this._midi = this.nameToMidi(note);
             this._frequency = this.midiToFreq(this._midi);
-        } else if (typeof note === "number") {
+        } else {
             if (note >= 0 && note <= 127) {
                 this._midi = note;
                 this._frequency = this.midiToFreq(note);
@@ -16,8 +16,6 @@ export class Note {
             } else {
                 throw new Error("Midi note must be between 0 and 127");
             }
-        } else {
-            throw new Error(`Note input must be a string or number`);
         }
     }
 
