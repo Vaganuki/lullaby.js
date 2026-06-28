@@ -73,6 +73,8 @@ export class PlayableNote {
         this._effects.forEach(({type, config}) => {
             switch (type) {
                 case 'vibrato':
+                    this.applyVibrato(audioCtx, osc, startTime, duration, config);
+                    break;
             }
         })
     }
